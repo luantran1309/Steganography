@@ -1,3 +1,5 @@
+# Use the LSB bit in the PNG file to embed text, as it will not significantly change the image's value.
+
 from PIL import Image
 import numpy as np
 

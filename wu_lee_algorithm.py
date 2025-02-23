@@ -133,8 +133,6 @@ def extract(input, key):
     print("📝 Extracted text:", bits_to_text(text))
 
 
-# embed("a.png", "b.png", [[1, 0,1], [0, 1,0], [1, 1, 0]], "hello")
-# extract("b.png", [[1, 0,1], [0, 1, 0], [1, 1, 0]])
 # CLI Argument Parsing
 parser = argparse.ArgumentParser(description="Wu-Lee algorithm to embed text into image.")
 parser.add_argument("--embed", action="store_true", help="Embed text into an image")

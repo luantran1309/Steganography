@@ -1,3 +1,11 @@
+"""
+------------------------- Jsteg Algorithm ------------------------
+- DCT Transformation: Applies Discrete Cosine Transform (DCT) to divide the image into 8×8 blocks for frequency domain manipulation.
+- Embedding Process: Modifies low-frequency DCT coefficients (excluding DC component) to store text bits while minimizing visual impact.
+- Retrieves the embedded bits from selected DCT coefficients.
+"""
+
+
 import cv2
 import numpy as np
 
@@ -69,4 +77,5 @@ def embed_and_extract(input, text):
     extracted_text = extract_text(img_dct, len(text))
     print(f"Extracted text: {bits_to_text(extracted_text)}")
 
-embed_and_extract("a.jpg", "hello")
+# Run 
+embed_and_extract('a.jpg', "hello")

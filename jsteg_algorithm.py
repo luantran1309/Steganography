@@ -78,4 +78,4 @@ def embed_and_extract(input, text):
     print(f"Extracted text: {bits_to_text(extracted_text)}")
 
 # Run 
-embed_and_extract('a.jpg', "hello")
+# embed_and_extract(input_path, text)
